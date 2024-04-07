@@ -36,10 +36,6 @@ class AddressBook(UserDict):
     def find(self, name):
         return self.data.get(name)
 
-    
-    def edit_phone(self, old_phone, new_phone):
-        result = next(note for note in self.data if note.value == name)
-        self.data.update(result.phones[old_phone], new_phone)
 
 # Створення нової адресної книги
 book = AddressBook()
