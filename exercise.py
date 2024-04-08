@@ -62,10 +62,8 @@ book = AddressBook()
 
 # Створення запису для John
 john_record = Record("John")
-
 john_record.add_phone("1234567890")
 john_record.add_phone("5555555555")
-
 
 # Додавання запису John до адресної книги
 book.add_record(john_record)
@@ -81,8 +79,8 @@ for name, record in book.data.items():
 
 # Знаходження та редагування телефону для John
 john = book.find("John")
-print(john)
 john.edit_phone("1234567890", "1112223333")
+
 print(john)  # Виведення: Contact name: John, phones: 1112223333; 5555555555
 
 # Пошук конкретного телефону у записі John
